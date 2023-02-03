@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="shortcut icon" href="./assets/image/icon-portfolio.svg" type="image/x-icon">
 
+
+  <!-- Fontes Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -37,7 +39,7 @@
             <a href="#skills">Habilidades</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contato</a>
           </li>
 
         </ul>
@@ -68,21 +70,23 @@
             Sou uma estudante full-stack apaixonada pelo desenvolvimento de software. Estou sempre em busca de novos conhecimentos para me tornar uma desenvolvedora cada vez melhor. Adoro o desafio de aprender e aplicar novos conceitos em projetos reais.
           </p>
 
-          <div class="home-social-media">
+          <div class="home-links">
             <ul>
 
               <li>
-                <a href="https://github.com/paulaandrezza" target="_blank"><img src="" alt="icon-github"></a>
+                <a href="https://github.com/paulaandrezza" target="_blank"><img src="./assets/image/icon-github.svg" alt="icon-github"></a>
               </li>
               
               <li>
-                <a href="https://www.linkedin.com/in/paula-andrezza/" target="_blank"><img src="" alt="icon-linkedin"></a>
+                <a href="https://www.linkedin.com/in/paula-andrezza/" target="_blank"><img src="./assets/image/icon-linkedin.svg" alt="icon-linkedin"></a>
+              </li>
+
+              <li>
+                <a href="#about" class="btn">Sobre mim</a>
               </li>
               
             </ul>
           </div>
-
-          <a href="#about" class="btn">Sobre mim</a>
 
         </div>
 
@@ -136,22 +140,22 @@
 
             <form action="" class="contact-form">
 
-              <input type="text" name="name" placeholder="Nome" required>
+              <input type="text" name="name" placeholder="Nome" required class="contact-input">
 
-              <input type="email" name="email" placeholder="Email" required>
+              <input type="email" name="email" placeholder="Email" required class="contact-input">
 
-              <textarea name="message" placeholder="Mensagem" required></textarea>
+              <textarea name="message" placeholder="Mensagem" required class="contact-input"></textarea>
 
-              <button type="submit" class="btn">Enviar Mensagem</button>
+              <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
 
             </form>
 
             <ul class="contact-list">
 
-              <li>
+              <li class="contact-item">
                 
                 <div class="contact-icon">
-                  <img src="" alt="icon-email">
+                  <ion-icon name="mail"></ion-icon>
                 </div>
 
                 <div>
@@ -162,8 +166,10 @@
 
               </li>
 
+              <li  class="contact-item">
+
                 <div class="contact-icon">
-                  <img src="" alt="icon-location">
+                  <ion-icon name="navigate-circle"></ion-icon>
                 </div>
 
                 <div>
@@ -188,6 +194,11 @@
 
   </main>
 
+
+
+  <!-- Ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

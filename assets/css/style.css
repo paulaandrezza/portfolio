@@ -31,8 +31,12 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea { width: 100%; }
+
 html {
   font-size: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -50,6 +54,7 @@ body {
   padding: 10px 40px;
   font-size: 1.8rem;
   border-radius: 50px;
+  border: 2px solid #6daa57;
 }
 
 .btn:hover {
@@ -62,8 +67,16 @@ body {
 }
 
 .section-subtitle {
-  color: #5DB43E
+  color: var(--green);
 }
+
+ion-icon {
+  color: var(--lightpurple);
+  font-size: 4rem;
+}
+
+
+/* Header */
 
 header {
   position: fixed;
@@ -80,18 +93,103 @@ header > .container {
   align-items: center;
 }
 
-
-
-
 .logo {
   display: flex;
   flex-direction: column;
 }
 
 .logo img {
-  width: 150px;
+  width: 120px;
 }
 
+.navbar-list {
+  font-size: 2rem;
+}
+
+.navbar-list li:is(:hover, :focus) {
+  color: var(--green);
+}
+
+
+
+/* Contact */
+
+.contact-card {
+  background-color: #29163c;
+  padding: 50px 40px;
+  border-radius: 50px;
+}
+
+.contact-card h2 {
+  font-weight: 400;
+  font-size: 3rem;
+  padding-bottom: 15px;
+}
+
+.contact-form {
+  padding-bottom: 50px;
+}
+
+.contact-input {
+  background-color: #CEB2EA05;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border: 2px solid var(--lightpurple);
+}
+
+.contact-input::placeholder {
+  color: inherit; 
+}
+
+textarea.contact-input {
+  resize: vertical;
+  min-height: 100px;
+  height: 180px;
+  max-height: 300px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-item:not(:last-child) { margin-block-end: 20px; }
+
+
+
+.contact-item-title {
+  color: white;
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+}
+
+.contact-item-link { transition: var(--transition-1); }
+
+.contact-item-link:not(address):is(:hover, :focus) { color: var(--white); }
+
+
+
+
+
+@media (min-width: 600px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+}
 
 
 
@@ -103,6 +201,27 @@ header > .container {
   }
 
 
+  /* Contact */
 
+  .contact-card {
+    padding: 100px;
+  }
+
+  .contact .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .contact-form {
+    padding-bottom: 0;
+  }
 
 }
