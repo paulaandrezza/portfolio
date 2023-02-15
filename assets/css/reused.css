@@ -1,0 +1,37 @@
+/* reused style */
+
+.container {
+  padding: 0 50px;
+}
+
+.btn {
+  background: var(--button-background);
+  color: var(--background-primary);
+  max-width: max-content;
+  padding: 10px 40px;
+  font-size: 1.8rem;
+  border-radius: 50px;
+  border: 2px solid var(--button-border);
+}
+
+.btn:hover {
+  transition: 0.3s;
+  opacity: 0.6;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-subtitle {
+  color: var(--button-background);
+}
+
+ion-icon {
+  color: var(--font-color);
+  font-size: 4rem;
+}

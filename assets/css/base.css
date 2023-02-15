@@ -1,0 +1,75 @@
+/* Custom Property */
+
+:root {
+
+  --background-primary: #241533;
+  --background-secondary: #29163c;
+  --input-background: #CEB2EA10;
+  --home-links-background: #815ca7;
+  --button-background: #ffa500;
+  --button-border: #ffa50060;
+  --title-color: #fff;
+  --font-color: #CEB2EA;
+  --home-title-color: #d87d06;
+
+  --section-padding: 60px;
+}
+
+/* reset */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span, strong {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, h3 {
+  color: var(--title-color);
+}
+
+img {
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea { width: 100%; }
+
+html {
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--background-primary);
+  color: var(--font-color);
+  font-size: 1.8rem;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+
+@media (min-width: 992px) {
+
+  .container {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+}

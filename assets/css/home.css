@@ -1,0 +1,52 @@
+/* Home */
+
+.home {
+  padding-top: 105px;
+}
+
+.home-title {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.home-title strong {
+  font-size: 3.5rem;
+  color: var(--home-title-color);
+}
+
+.home-links ul {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.home-links ul li a{
+  background-color: var(--home-links-background);
+  border: var(--home-links-background);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.home-links ul li a ion-icon {
+  font-size: 30px; 
+  color: white;  
+}
+
+
+@media (min-width: 768px) {
+
+  .home {
+    display: flex;
+  }
+
+  .home .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+}

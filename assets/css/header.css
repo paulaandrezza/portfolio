@@ -1,0 +1,104 @@
+/* Header */
+
+header {
+  position: fixed;
+  padding-block: 15px;
+  width: 100%;
+  background: var(--background-secondary);
+  overflow: hidden;
+  box-shadow: 0 -5px 10px var(--font-color);
+}
+
+.header .nav-active {
+  height: 335px;
+  transition-duration: 0.3s;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-toggle-btn {
+  background-color: var(--background-secondary);
+  border: none;
+}
+
+.nav-toggle-btn .close-icon, .nav-toggle-btn.active .menu-icon {
+  display: none;
+}
+
+.nav-toggle-btn.active .close-icon, .nav-toggle-btn .menu-icon {
+  display: block;
+}
+
+.navbar {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.header.nav-active .navbar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar-list {
+  font-size: 2rem;
+}
+
+.navbar-list li:is(:hover, :focus) {
+  color: var(--green);
+}
+
+
+@media (min-width: 768px) {
+
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .nav-toggle-btn {
+    display: none;
+  }
+
+  .header, .header.nav-active {
+    background-color: transparent;
+    height: unset;
+  }
+
+  .header .active {
+    background-color: red;
+  }
+
+  .navbar {
+    all: unset;
+  }
+
+  .navbar-list {
+    display: flex;
+    align-items: center;
+  }
+  
+}
