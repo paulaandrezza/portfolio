@@ -37,7 +37,7 @@ ion-icon {
   font-size: 4rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   .container {
     padding: 0 50px;
@@ -49,4 +49,10 @@ ion-icon {
     margin: 0 auto;
   }
 
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
 }
