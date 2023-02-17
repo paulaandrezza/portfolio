@@ -8,7 +8,7 @@
 }
 
 .home-banner img {
-  width: 80%;
+  width: 200px;
 }
 
 .home-title {
@@ -46,6 +46,10 @@
 @media (min-width: 425px) {
   .home-links ul {
     flex-direction: row;
+  }
+
+  .home-banner img {
+    width: 300px;
   }
 }
 

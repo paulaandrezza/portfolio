@@ -7,7 +7,7 @@
 .contact-card {
   background-color: var(--background-secondary);
   padding: 50px 5px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .contact-card h2 {
