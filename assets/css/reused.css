@@ -1,15 +1,16 @@
 /* reused style */
 
 .container {
-  padding: 0 50px;
+  width: 100vw;
+  padding: 0 20px;
 }
 
 .btn {
   background: var(--button-background);
-  color: var(--background-primary);
+  color: var(--white-color);
   max-width: max-content;
   padding: 10px 40px;
-  font-size: 1.8rem;
+  font-size: 1em;
   border-radius: 50px;
   border: 2px solid var(--button-border);
 }
@@ -34,4 +35,18 @@
 ion-icon {
   color: var(--font-color);
   font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    padding: 0 50px;
+  }
+
+  
+  .container {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
 }

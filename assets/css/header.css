@@ -5,6 +5,7 @@ header {
   padding-block: 15px;
   width: 100%;
   background: var(--background-secondary);
+  height: 120px;
   overflow: hidden;
   box-shadow: 0 -5px 10px var(--font-color);
 }

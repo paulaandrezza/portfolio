@@ -1,16 +1,20 @@
-
 /* Contact */
+
+.contact .container {
+  padding: 0;
+}
 
 .contact-card {
   background-color: var(--background-secondary);
-  padding: 50px 40px;
-  border-radius: 50px;
+  padding: 50px 5px;
+  border-radius: 10px;
 }
 
 .contact-card h2 {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .contact-form {
@@ -38,15 +42,20 @@ textarea.contact-input {
   max-height: 300px;
 }
 
+.btn-submit {
+  max-width: 100%;
+  width: 100%;
+}
+
 .contact-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .contact-item:not(:last-child) { margin-block-end: 20px; }
-
-
 
 .contact-item-title {
   font-family: var(--ff-barlow);
@@ -59,12 +68,30 @@ textarea.contact-input {
 .contact-item-link:not(address):is(:hover, :focus) { color: var(--white); }
 
 
-
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
   .contact-card {
-    padding: 50px 100px;
+    padding: 30px 50px;
+    border-radius: 50px;
+  }
+  
+  .contact-card h2{
+    font-size: 2.5rem;
+  }
+
+  .contact-item {
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .contact-card h2 {
+    font-size: 3rem;
   }
 
   .contact .wrapper {
