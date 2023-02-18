@@ -27,6 +27,9 @@ const languageColors = [
 
 const idReposParaExibir = [
   594292244,
+  594250923,
+  589114869,
+  589831076,
   589365670,
   577856949,
   563413076,
