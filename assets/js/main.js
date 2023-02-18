@@ -2,11 +2,11 @@
 /* navbar toogle */
 
 const header = document.querySelector("[data-header]");
-const navToogleBtn = document.querySelector("[data-nav-toggle-btn]");
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 
-navToogleBtn.addEventListener('click', () => {
+navToggleBtn.addEventListener('click', () => {
   header.classList.toggle('nav-active');
-  navToogleBtn.classList.toggle('active');
+  navToggleBtn.classList.toggle('active');
 });
 
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -14,6 +14,6 @@ const navbarLinks = document.querySelectorAll("[data-nav-link]");
 for (let i = 0 ; i < navbarLinks.length ; i++) {
   navbarLinks[i].addEventListener('click', () => {
     header.classList.toggle('nav-active');
-    navToogleBtn.classList.toggle('active');
+    navToggleBtn.classList.toggle('active');
   });
 }

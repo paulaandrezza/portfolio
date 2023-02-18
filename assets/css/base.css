@@ -37,7 +37,7 @@ a {
 }
 
 h2, h3 {
-  color: var(--title-color);
+  color: var(--white-color);
   padding-bottom: 20px;
   font-weight: 400;
 }

@@ -1,31 +1,43 @@
 .portfolio-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   color: var(--white-color);
 }
 
 .project-card {
   background-color: var(--home-title-color);
   border-radius: 10px;
-  /* padding: 20px; */
   box-sizing: border-box;
+  box-shadow: 0 0 3px 1px var(--font-color);
 }
 
 .card-img {
   background-size: cover;
-  max-width: 100%;
+  width: 100%;
+  max-height: 20vh;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
 }
 
 .card-content {
   padding: 20px;
 }
 
+.project-subtitle {
+ font-size: 0.8em;
+}
+
 
 .project-language {
   margin-top: 10px;
   text-align: right;
+}
+
+main .container {
+  padding-top: 105px;
 }
 
 
