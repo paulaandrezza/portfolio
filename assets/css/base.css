@@ -2,15 +2,12 @@
 
 :root {
 
-  --background-primary: #241533;
-  --background-secondary: #29163c;
-  --input-background: #CEB2EA10;
-  --home-links-background: #815ca7;
-  --button-background: #ffa500;
-  --button-border: #ffa50060;
-  --white-color: #fff;
-  --font-color: #CEB2EA;
-  --home-title-color: #d87d06;
+  --background-primary: #1F1F1F;
+  --background-secondary: #2D2F31;
+
+  --color: #f15a94;
+  --color-secondary: #cd5c5c;
+  --font-color: #E3E3E3;
 
   --section-padding: 60px;
 }
@@ -21,6 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* color: #770635; */
 }
 
 span, strong {
@@ -37,7 +35,7 @@ a {
 }
 
 h2, h3 {
-  color: var(--white-color);
+  color: var(--font-color);
   padding-bottom: 20px;
   font-weight: 400;
 }

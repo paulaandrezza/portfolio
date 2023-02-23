@@ -6,13 +6,13 @@
 }
 
 .btn {
-  background: var(--button-background);
-  color: var(--white-color);
+  background: var(--color-secondary);
+  color: var(--font-color);
   max-width: max-content;
   padding: 10px 40px;
   font-size: 1em;
   border-radius: 50px;
-  border: 2px solid var(--button-border);
+  border: none;
 }
 
 .btn:hover {
@@ -29,7 +29,7 @@
 }
 
 .section-subtitle {
-  color: var(--button-background);
+  color: var(--color-secondary);
 }
 
 ion-icon {

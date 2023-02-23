@@ -22,7 +22,7 @@
 }
 
 .contact-input {
-  background-color: var(--input-background);
+  background-color: var(--background-primary);
   color: white;
   border-radius: 20px;
   padding: 15px 25px;
@@ -61,6 +61,7 @@ textarea.contact-input {
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
+  padding-bottom: 2px;
 }
 
 .contact-item-link { transition: var(--transition-1); }

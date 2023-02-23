@@ -31,12 +31,7 @@ const idReposParaExibir = [
   589114869,
   589831076,
   589365670,
-  577856949,
-  563413076,
-  554972872,
   603496113,
-  578808828,
-  563413076,
 ];
 
 function convertRepoToLi(repositorio){

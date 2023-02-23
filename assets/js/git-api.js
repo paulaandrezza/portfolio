@@ -7,6 +7,9 @@ function convertRepoApitoRepo(repoDetail) {
     repositorio.language = repoDetail.language
     repositorio.description = repoDetail.description
     repositorio.html_url = repoDetail.html_url
+
+    // TODO: topics precisa atualizar os projetos também, já que esse é você quem vai gerar, escolhi essa opção pois o languages mostra os tópicos que o git identificou, mas ele não identifica frameworks e bibliotecas, o que é algo interessante a se colocar.
+
     return repositorio
 }
 

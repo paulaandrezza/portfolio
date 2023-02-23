@@ -5,6 +5,8 @@ const header = document.querySelector("[data-header]");
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 
 navToggleBtn.addEventListener('click', () => {
+  console.log(navToggleBtn);
+
   header.classList.toggle('nav-active');
   navToggleBtn.classList.toggle('active');
 });
