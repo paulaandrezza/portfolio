@@ -6,8 +6,8 @@
 }
 
 .project-card {
-  background-color: var(--color-secondary);
-  border-radius: 10px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
   box-sizing: border-box;
   box-shadow: 0 0 3px 1px var(--font-color);
 }
@@ -16,7 +16,7 @@
   background-size: cover;
   width: 100%;
   max-height: 20vh;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
   object-fit: cover;
   object-position: top;
   overflow: hidden;

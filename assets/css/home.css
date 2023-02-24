@@ -29,17 +29,9 @@
   padding: 20px 0;
 }
 
-.home-links ul li a{
-  background-color: var(--color);
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .home-links ul li a ion-icon {
   font-size: 1.2em; 
-  color: var(--font-color);  
+  color: #fff;  
 }
 
 

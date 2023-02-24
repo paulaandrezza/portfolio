@@ -27,11 +27,9 @@ const languageColors = [
 
 const idReposParaExibir = [
   594292244,
-  594250923,
   589114869,
-  589831076,
   589365670,
-  603496113,
+  605767089
 ];
 
 function convertRepoToLi(repositorio){
