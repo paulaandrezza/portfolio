@@ -1,4 +1,7 @@
+import { loadGitItens } from './repo-main.js'
 
+
+loadGitItens()
 /* navbar toggle */
 
 const menuIcon = document.getElementById('menu-icon');
