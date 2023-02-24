@@ -4,5 +4,5 @@ class Repo {
   language;
   description;
   html_url;
-  topics;
+  topics = [];
 }

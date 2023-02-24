@@ -31,13 +31,25 @@
 }
 
 
-.project-language {
+.project-topics {
   margin-top: 10px;
   text-align: right;
+  font-size: 0.7em;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.project-topics li {
+  background-color: var(--color);
+  padding: 5px 10px;
+  border-radius: 20px;
 }
 
 main .container {
-  padding-top: 105px;
+  padding-top: 50px;
 }
 
 

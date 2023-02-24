@@ -32,7 +32,7 @@ toggle.addEventListener('click', () => {
 function changeTheme(isLight) {
   if(isLight) {
     document.body.style.setProperty('--background-primary', '#E3E3E3');
-    document.body.style.setProperty('--background-secondary', '#facae1');
+    document.body.style.setProperty('--background-secondary', '#dcdcdc');
     document.body.style.setProperty('--font-color', '#1f1f1f');
 
     logo.src='assets/img/logo-dark.svg'
@@ -48,3 +48,18 @@ function changeTheme(isLight) {
     localStorage.setItem('data-theme', 'dark');
   }
 }
+
+
+/* back to top */
+
+const backTopBtn = document.querySelector('[data-back-to-top]');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 100) {
+    header.classList.add("active");
+    backTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    backTopBtn.classList.remove("active");
+  }
+})

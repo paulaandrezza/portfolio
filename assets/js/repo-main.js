@@ -49,7 +49,9 @@ function convertRepoToLi(repositorio){
           <div class="card-content">
             <h3 class="project-title">${repositorio.name}</h3>
             <p class="project-subtitle">${repositorio.description}</p>
-            <p class="project-language">${repositorio.language}</p>
+            <ul class="project-topics">
+              ${repositorio.topics.map((topic) => `<li>${topic}</li>`).join('')}
+            </ul>
           </div>
 
         </a>

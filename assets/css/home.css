@@ -1,7 +1,6 @@
 /* Home */
 
 .home .container{
-  /* padding-top: 105px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,13 +11,13 @@
 }
 
 .home-title {
-  font-size: 2rem;
+  font-size: 1em;
   padding-bottom: 20px;
   font-weight: 400;
 }
 
 .home-title strong {
-  font-size: 3.5rem;
+  font-size: 1.8em;
   color: var(--color);
 }
 
@@ -49,8 +48,6 @@
 @media (min-width: 768px) {
 
   .home .container {
-    display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     gap: 50px;
   }
