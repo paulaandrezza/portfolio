@@ -9,6 +9,17 @@ menuIcon.addEventListener('click', () => {
   header.classList.toggle('show');
 })
 
+/* toggle the navbar when click any navbar link */
+
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener("click", function () {
+    menuIcon.classList.toggle('open');
+    header.classList.toggle('show');
+  });
+}
+
 
 
 /* theme toggle */
@@ -23,9 +34,7 @@ changeTheme(isLight);
 
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('light');
-
   isLight = toggle.classList.value == 'light';
-
   changeTheme(isLight);
 })
 

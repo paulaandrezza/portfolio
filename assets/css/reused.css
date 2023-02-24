@@ -8,7 +8,7 @@
 .btn, .btn2, .btn-icon {
   color: #fff;
   max-width: max-content;
-  padding: 10px 16px;
+  padding: 8px 16px;
   height: 36px;
   min-width: 64px;
   font-size: 0.8em;
@@ -24,8 +24,12 @@
 .btn2 {
   background: none;
   color: var(--color);
-  padding: 10px 0;
   margin: 30px 0;
+}
+
+.btn2:hover {
+  background-color: var(--background-secondary);
+  transition: 0.1s;
 }
 
 .btn-icon {
@@ -37,7 +41,7 @@
   padding: 10px 16px 10px 12px;
 }
 
-.btn:hover, .btn2:hover, .btn-icon:hover {
+.btn:hover, .btn-icon:hover {
   transition: 0.3s;
   opacity: 0.6;
 }
@@ -62,6 +66,7 @@
 ion-icon {
   color: var(--font-color);
   font-size: 4rem;
+  z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
