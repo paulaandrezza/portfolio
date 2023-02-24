@@ -11,14 +11,14 @@ menuIcon.addEventListener('click', () => {
 
 /* toggle the navbar when click any navbar link */
 
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
+// const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
-for (let i = 0; i < navbarLinks.length; i++) {
-  navbarLinks[i].addEventListener("click", function () {
-    menuIcon.classList.toggle('open');
-    header.classList.toggle('show');
-  });
-}
+// for (let i = 0; i < navbarLinks.length; i++) {
+//   navbarLinks[i].addEventListener("click", function () {
+//     menuIcon.classList.toggle('open');
+//     header.classList.toggle('show');
+//   });
+// }
 
 
 
