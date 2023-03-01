@@ -1,5 +1,9 @@
 /* Contact */
 
+.section.contact {
+  min-height: 90vh;
+}
+
 .contact .container {
   padding: 0;
 }
@@ -7,9 +11,9 @@
 .contact-card {
   background-color: var(--background-secondary);
   padding: 50px 5px;
-  border-radius: 20px;
+  border-radius: 16px;
 
-  box-shadow: 0 0 3px 1px var(--font-color);
+  box-shadow: 16px 16px 16px var(--border-color);
 }
 
 .contact-card h2 {
@@ -75,7 +79,7 @@ textarea.contact-input {
 
   .contact-card {
     padding: 30px 50px;
-    border-radius: 50px;
+    border-radius: 32px;
   }
   
   .contact-card h2{

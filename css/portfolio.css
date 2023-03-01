@@ -15,7 +15,7 @@
   background-color: var(--background-secondary);
   border-radius: 8px;
   box-sizing: border-box;
-  box-shadow: 0 0 3px 1px var(--font-color);
+  box-shadow: 8px 8px 8px var(--border-color);
 }
 
 .card-img {
