@@ -112,6 +112,7 @@ nav ul li {
   width: 60px;
   height: 30px;
   border-radius: 20px;
+  border: none;
   padding: 0 5px;
 
   display: flex;
@@ -131,12 +132,11 @@ nav ul li {
   color: var(--background-primary);
 }
 
-.switcher button {
+.switcher div:nth-child(3) {
   background-color: var(--background-primary);
   width: 20px;
   height: 20px;
   border-radius: 15px;
-  border: none;
 
   position: absolute;
 

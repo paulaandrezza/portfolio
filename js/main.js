@@ -26,6 +26,7 @@ menuIcon.addEventListener('click', () => {
 
 /* theme toggle */
 const logo = document.getElementById('logo');
+const switcher = document.getElementById('switcher');
 
 const toggle = document.getElementById('toggle');
 var isLight = localStorage.getItem('data-theme') == 'light';
@@ -33,7 +34,7 @@ isLight ? toggle.classList.toggle('light') : null;
 changeTheme(isLight);
 
 
-toggle.addEventListener('click', () => {
+switcher.addEventListener('click', () => {
   toggle.classList.toggle('light');
   isLight = toggle.classList.value == 'light';
   changeTheme(isLight);
