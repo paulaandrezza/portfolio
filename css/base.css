@@ -55,6 +55,8 @@ textarea { width: 100%; }
 html {
   font-size: 10px;
   font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 body {
