@@ -83,8 +83,16 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0.5rem 0;
   border-bottom: 1px solid var(--background-primary);
+}
+
+header .btn2 {
+  margin: 0.5rem 0;
+  color: var(--font-color);
+}
+
+header .btn2:hover {
+  background-color: var(--background-primary);
 }
 
 .menu-icon.open {

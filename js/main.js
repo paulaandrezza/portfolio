@@ -42,9 +42,9 @@ switcher.addEventListener('click', () => {
 
 function changeTheme(isLight) {
   if(isLight) {
-    document.body.style.setProperty('--background-primary', '#E3E3E3');
-    document.body.style.setProperty('--background-secondary', '#dcdcdc');
-    document.body.style.setProperty('--font-color', '#1f1f1f');
+    document.body.style.setProperty('--background-primary', '#C2C2C2');
+    document.body.style.setProperty('--background-secondary', '#DCDCDC');
+    document.body.style.setProperty('--font-color', '#1F1F1F');
 
     logo.src='assets/img/logo-dark.svg'
 
