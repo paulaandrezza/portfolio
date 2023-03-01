@@ -1,3 +1,9 @@
+.section.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .portfolio-list {
   display: flex;
   flex-direction: column;

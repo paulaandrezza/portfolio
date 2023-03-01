@@ -1,9 +1,8 @@
 import { loadGitItens } from './repo-main.js'
 
-
 loadGitItens()
-/* navbar toggle */
 
+/* navbar toggle */
 const menuIcon = document.getElementById('menu-icon');
 const header = document.querySelector('header');
 
@@ -26,7 +25,6 @@ menuIcon.addEventListener('click', () => {
 
 
 /* theme toggle */
-
 const logo = document.getElementById('logo');
 
 const toggle = document.getElementById('toggle');
@@ -63,7 +61,6 @@ function changeTheme(isLight) {
 
 
 /* back to top */
-
 const backTopBtn = document.querySelector('[data-back-to-top]');
 
 window.addEventListener('scroll', () => {
