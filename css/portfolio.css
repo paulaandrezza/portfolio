@@ -18,6 +18,11 @@
   box-shadow: 8px 8px 8px var(--border-color);
 }
 
+.project-card:hover {
+  transform: scale(1.01);
+  transition: .3s;
+}
+
 .card-img {
   background-size: cover;
   width: 100%;
