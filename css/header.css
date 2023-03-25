@@ -8,6 +8,7 @@ header {
   height: 80px;
   overflow: hidden;
   box-shadow: 0 -5px 10px var(--font-color);
+  z-index: 1;
 }
 
 header.show {

@@ -57,6 +57,7 @@
 
 .section-subtitle {
   color: var(--color-secondary);
+  margin-bottom: 16px;
 }
 
 .section-subtitle, .section-title {
