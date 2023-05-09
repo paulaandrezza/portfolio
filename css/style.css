@@ -6,7 +6,7 @@
   --background-secondary: #2D2F31;
 
   --color: #f15a94;
-  --color-secondary: #f15a94;
+  --color-secondary: #cf0e58;
   --font-color: #e3e3e3;
 
   --border-color: #00000010;
@@ -89,13 +89,14 @@ body {
 }
 
 .btn {
-  background: var(--color-secondary);
+  background: var(--color);
 }
 
 .btn2 {
   background: none;
   color: var(--color);
   margin: 30px 0;
+  border: 1px solid var(--background-secondary);
 }
 
 .btn2:hover {
@@ -104,7 +105,7 @@ body {
 }
 
 .btn-icon {
-  background: var(--color-secondary);
+  background: var(--color);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -127,7 +128,7 @@ body {
 }
 
 .section-subtitle {
-  color: var(--color-secondary);
+  color: var(--color);
   margin-bottom: 16px;
 }
 
@@ -338,15 +339,93 @@ header .btn2:hover {
 
 /* About */
 
-.about .container {
+.about .section-subtitle {
+  margin-bottom: 80px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.about-banner img {
-  width: 250px;
+.timeline-container:nth-child(even) {
+  flex-direction: column-reverse;
 }
+
+.timeline-container .content, .timeline-container .icon {
+  height: 160px;
+}
+
+.timeline-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-container .content h3 {
+  padding-bottom: 0;
+  font-size: 1.4rem;
+}
+
+.timeline-container .content p {
+  font-size: 1rem;
+}
+
+.timeline-container .content h2 {
+  padding-bottom: 0;
+}
+
+.timeline-container .divider {
+  background-color: var(--color);
+  height: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-container .divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.timeline-container:nth-child(odd) .divider {
+  background-color: var(--color-secondary);
+}
+
+.timeline-container .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.material-symbols-rounded {
+  font-size: 4rem;
+  background-color: var(--color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.timeline-container:nth-child(odd) .icon .material-symbols-rounded {
+  background-color: var(--color-secondary);
+}
+
+
+
 
 
 /* Portfolio */

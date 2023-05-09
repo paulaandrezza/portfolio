@@ -75,3 +75,47 @@ window.addEventListener('scroll', () => {
     backTopBtn.classList.remove("active");
   }
 })
+
+
+const timelineItems = [
+  {
+    title: "Aprendizagem Industrial em Eletroeletrônica",
+    content: "Meu primeiro contato com tecnologia, o que me abriu as portas para esse mundo incrível.",
+    year: 2018,
+    icon: "bolt"
+  },
+  {
+    title: "Técnico em Mecatrônica",
+    content: "Estava decidida que queria trabalhar com tecnologia, então fiz um técnico para poder trabalhar na área",
+    year: 2018,
+    icon: "settings_suggest"
+  }
+]
+
+const makeTimelineLi = (item) => {
+  return `
+    <li class="timeline-container">
+      <div class="content">
+        <h3>${item.title}</h3>
+        <p>${item.content}</p>
+        <h2>${item.year}</h2>
+      </div>
+      <span class="divider"></span>
+      <span class="line"></span>
+      <div class="icon">
+        <span class="material-symbols-rounded">
+          ${item.icon}
+        </span>
+      </div>
+    </li>
+  `
+}
+
+const timeline = document.getElementById('timeline');
+
+const loadtimelineItems = () => {
+  const newHtml = timelineItems.map(makeTimelineLi).join('')
+  timeline.innerHTML = newHtml
+}
+
+loadtimelineItems()
