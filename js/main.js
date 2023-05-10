@@ -77,6 +77,8 @@ window.addEventListener('scroll', () => {
 })
 
 
+// About
+
 const timelineItems = [
   {
     title: "Aprendizagem Industrial em Eletroeletrônica",

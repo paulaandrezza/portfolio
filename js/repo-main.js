@@ -40,3 +40,4 @@ export function loadGitItens() {
     return console.warn("Ocorreu uma falha na busca do repositório")
   })
 }
+
