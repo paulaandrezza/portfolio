@@ -4,21 +4,28 @@ const repoList = document.getElementById('repo-list');
 
 
 function convertRepoToLi(repositorio) {
+  console.log(repositorio.deploy)
   return `
       <li class="project-card">
-        <a href="${repositorio.html_url}" target="_blank">
 
-          <img class="card-img" src="https://raw.githubusercontent.com/paulaandrezza/${repositorio.name}/main/assets/img/desktop.jpeg" alt="Print do projeto" onError="this.onerror=null; this.src='assets/img/alternative.webp';">
-          
-          <div class="card-content">
-            <h3 class="project-title">${repositorio.name}</h3>
-            <p class="project-subtitle">${repositorio.description}</p>
+        <img class="card-img" src="https://raw.githubusercontent.com/paulaandrezza/${repositorio.name}/main/assets/img/desktop.jpeg" alt="Print do projeto" onError="this.onerror=null; this.src='assets/img/alternative.webp';">
+        
+        <div class="card-content">
+          <h3 class="project-title">${repositorio.name}</h3>
+          <p class="project-subtitle">${repositorio.description}</p>
+          <div class="info">
+            <div>
+              <a href="${repositorio.html_url}" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="${repositorio.deploy}" class="material-symbols-rounded" target="_blank">
+                link
+              </a>
+            </div>
             <ul class="project-topics">
               ${repositorio.topics.map((topic) => `<li>${topic}</li>`).join('')}
             </ul>
           </div>
+        </div>
 
-        </a>
       </li>
   `
 }

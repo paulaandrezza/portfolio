@@ -2,7 +2,7 @@ const idReposParaExibir = [
   594292244,
   589365670,
   605767089,
-  625419772
+  625419772,
 ];
 
 function convertRepoApitoRepo(repo) {
@@ -12,7 +12,8 @@ function convertRepoApitoRepo(repo) {
     language: repo.language,
     description: repo.description,
     html_url: repo.html_url,
-    topics: repo.topics
+    topics: repo.topics,
+    deploy: repo.homepage
   }    
 }
 
