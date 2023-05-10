@@ -2,35 +2,8 @@ import { getRepo } from './git-api.js'
 
 const repoList = document.getElementById('repo-list');
 
-// const LANGUAGE_COLORS = {
-//   "JavaScript": "#f1e05a",
-//   "Python": "#3572A5",
-//   "Ruby": "#701516",
-//   "C++": "#f34b7d",
-//   "Go": "#00ADD8",
-//   "Shell": "#89e051",
-//   "Markdown": "#333",
-//   "TypeScript": "#2b7489",
-//   "Swift": "#ffac45",
-//   "Kotlin": "#F18E33",
-//   "Java": "#b07219",
-//   "PHP": "#4F5D95",
-//   "C#": "#178600",
-//   "CSS": "#563d7c",
-//   "C": "#555555",
-//   "Objective-C": "#438eff",
-//   "Rust": "#dea584",
-//   "Scala": "#c22d40",
-//   "HTML": "#e34c26",
-//   "Jupyter Notebook": "#DA5B0B",
-//   null: "#252525",
-// }
-
 
 function convertRepoToLi(repositorio) {
-
-  // const backgroundColor = LANGUAGE_COLORS[repositorio.language]
-
   return `
       <li class="project-card">
         <a href="${repositorio.html_url}" target="_blank">

@@ -1,8 +1,8 @@
 const idReposParaExibir = [
   594292244,
-  589114869,
   589365670,
-  605767089
+  605767089,
+  625419772
 ];
 
 function convertRepoApitoRepo(repo) {
