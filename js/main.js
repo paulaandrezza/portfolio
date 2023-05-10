@@ -80,16 +80,41 @@ window.addEventListener('scroll', () => {
 const timelineItems = [
   {
     title: "Aprendizagem Industrial em Eletroeletrônica",
-    content: "Meu primeiro contato com tecnologia, o que me abriu as portas para esse mundo incrível.",
-    year: 2018,
+    content: "Meu primeiro contato com tecnologia, o que me abriu as portas para esse mundo incrível",
+    year: "2017.1",
     icon: "bolt"
   },
   {
     title: "Técnico em Mecatrônica",
     content: "Estava decidida que queria trabalhar com tecnologia, então fiz um técnico para poder trabalhar na área",
-    year: 2018,
+    year: "2018.1",
     icon: "settings_suggest"
-  }
+  },
+  {
+    title: "Engenharia de Controle e Automação",
+    content: "Iniciei a faculdade, seguindo na área de automação",
+    year: "2019.1",
+    icon: "engineering"
+  },
+  {
+    title: "Técnico Eletrônico Jr. | Assistência Técnica | Multilaser",
+    content: "Meu primeiro emprego na área",
+    year: "2020.2",
+    icon: "charging_station"
+  },
+  {
+    title: "Técnico Eletrônico | Manutenção | TE Connectivity",
+    content: "Decidi que precisava entrar na carreira de automação para ficar mais próxima do meu curso",
+    year: "2022.1",
+    icon: "robot"
+  },
+  {
+    title: "Análise e Desenvolvimento de Sistemas",
+    content: "Depois de pensar muito sobre, percebi que era apaixonada por programação e troquei de curso",
+    year: "2023.1",
+    icon: "developer_mode"
+  },
+
 ]
 
 const makeTimelineLi = (item) => {
@@ -101,7 +126,6 @@ const makeTimelineLi = (item) => {
         <h2>${item.year}</h2>
       </div>
       <span class="divider"></span>
-      <span class="line"></span>
       <div class="icon">
         <span class="material-symbols-rounded">
           ${item.icon}
