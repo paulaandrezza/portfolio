@@ -3,6 +3,8 @@ const idReposParaExibir = [
   589365670,
   605767089,
   625419772,
+  577856949,
+  616616674,
 ];
 
 function convertRepoApitoRepo(repo) {
@@ -18,8 +20,8 @@ function convertRepoApitoRepo(repo) {
 }
 
 
-export const getRepo = () => {
-  const url = `https://api.github.com/users/paulaandrezza/repos`
+export const getRepo = (page = 1) => {
+  const url = `https://api.github.com/users/paulaandrezza/repos?page=${page}`
   
   return fetch(url)
   .then((response) => response.json())

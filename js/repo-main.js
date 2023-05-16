@@ -31,10 +31,10 @@ function convertRepoToLi(repositorio) {
 }
 
 
-export function loadGitItens() {
-  getRepo().then((repositorios = []) => {
+export function loadGitItens(pageNumber) {
+  getRepo(pageNumber).then((repositorios = []) => {
     const newHtml = repositorios.map(convertRepoToLi).join('')
-    repoList.innerHTML = newHtml
+    repoList.innerHTML += newHtml
   })
   .catch(error => {
     return console.warn("Ocorreu uma falha na busca do repositório")
