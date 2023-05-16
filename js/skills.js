@@ -61,6 +61,10 @@
           icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
           language: "SQLite"
         },
+        {
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          language: "MongoDB"
+        },
       ]
     }
   ]
