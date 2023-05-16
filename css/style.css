@@ -231,9 +231,20 @@ nav ul li {
   border-bottom: 1px solid var(--background-primary);
 }
 
-header .btn2 {
+.navbar-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-list li a {
   margin: 0.5rem 0;
   color: var(--font-color);
+  padding: 8px;
+  height: 36px;
+  margin: 30px 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 header .btn2:hover {
@@ -304,6 +315,18 @@ header .btn2:hover {
 
 /* Home */
 
+.neon-border {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 
+    0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem var(--color),
+    0 0 0.8rem var(--color),
+    0 0 2.8rem var(--color),
+    inset 0 0 1.3rem var(--color); 
+}
+
 .home .container{
   display: flex;
   flex-direction: column;
@@ -365,12 +388,12 @@ header .btn2:hover {
 
 .timeline-container .content h3 {
   padding-bottom: 0;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--color-secondary);
 }
 
 .timeline-container .content p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .timeline-container .content h2 {
@@ -725,8 +748,8 @@ footer {
   }
 
   .timeline-container .divider::after {
-  height: 10px;
-  width: 10px;
+    height: 10px;
+    width: 10px;
   }
 
   .timeline-container .icon {
