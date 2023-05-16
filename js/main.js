@@ -81,3 +81,8 @@ window.addEventListener('scroll', () => {
 // About
 import { loadtimelineItems } from './about.js'
 loadtimelineItems()
+
+
+// Skills
+import { loadSkillsItems } from './skills.js'
+loadSkillsItems()

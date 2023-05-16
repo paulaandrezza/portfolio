@@ -459,9 +459,6 @@ header .btn2:hover {
 }
 
 
-
-
-
 /* Portfolio */
 
 .section.portfolio {
@@ -543,6 +540,34 @@ header .btn2:hover {
 
 main .container {
   padding-top: 50px;
+}
+
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-title {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.skill-list li {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.05rem solid #fff;
+}
+
+.skill-list li img {
+  height: 100px;
 }
 
 
