@@ -74,14 +74,13 @@
     return `
       <li class="neon-border"> 
         <img src=${skill.icon} />
-        <span>${skill.language}</span>  
+        <span class="section-subtitle">${skill.language}</span>  
       </li>
     `
   }
   
 
   const makeSkillUl = (skillUl) => {
-    console.log(skillUl.icons);
     return `
       <div>
         <p class="skill-title">${skillUl.title}</p>

@@ -109,7 +109,6 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-
   padding: 10px 16px 10px 12px;
 }
 
@@ -117,7 +116,6 @@ body {
   transition: 0.3s;
   opacity: 0.6;
 }
-
 
 .section {
   padding: 50px 0;
@@ -148,15 +146,13 @@ ion-icon {
 header {
   position: fixed;
   width: 100%;
-  background: var(--background-secondary);
   height: 80px;
   overflow: hidden;
-  box-shadow: 0 -5px 10px var(--font-color);
-  z-index: 1;
+  z-index: 10;
 }
 
 header.show {
-  height: 300px;
+  height: 320px;
   transition-duration: 0.35s;
 }
 
@@ -237,18 +233,17 @@ nav ul li {
   justify-content: center;
 }
 
-.navbar-list li a {
+header .btn2 {
   margin: 0.5rem 0;
   color: var(--font-color);
-  padding: 8px;
-  height: 36px;
-  margin: 30px 0;
-  text-transform: uppercase;
-  font-size: 0.8em;
+  border: none;
+  border-radius: 0;
 }
 
 header .btn2:hover {
-  background-color: var(--background-primary);
+  border-bottom: 2px solid var(--color);
+  transform-origin: 0% 50%;
+  background-color: transparent;
 }
 
 .menu-icon.open {
@@ -315,16 +310,10 @@ header .btn2:hover {
 
 /* Home */
 
-.neon-border {
-  border: 0.2rem solid #fff;
-  border-radius: 2rem;
-  box-shadow: 
-    0 0 .2rem #fff,
-    0 0 .2rem #fff,
-    0 0 2rem var(--color),
-    0 0 0.8rem var(--color),
-    0 0 2.8rem var(--color),
-    inset 0 0 1.3rem var(--color); 
+.home {
+  background-image: url(../assets/img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home .container{
@@ -333,8 +322,28 @@ header .btn2:hover {
   align-items: center;
 }
 
+.home-banner {
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+
+.home-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(5deg);
+  width: 100%;
+  height: 100%;
+  background-color: var(--color);
+  z-index: -1;
+  border-radius: 10px;
+}
+
 .home-banner img {
   width: 200px;
+  border-radius: 10px;
 }
 
 .home-title {
@@ -557,6 +566,18 @@ main .container {
   text-align: center;
 }
 
+.neon-border {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 
+    0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem var(--color),
+    0 0 0.8rem var(--color),
+    0 0 2.8rem var(--color),
+    inset 0 0 1.3rem var(--color); 
+}
+
 .skill-list li {
   padding: 16px;
   display: flex;
@@ -566,8 +587,12 @@ main .container {
   border: 0.05rem solid #fff;
 }
 
+.skill-list li:hover {
+  transform: scale(1.02);
+}
+
 .skill-list li img {
-  height: 100px;
+  height: 50px;
 }
 
 
@@ -736,6 +761,10 @@ footer {
     gap: 50px;
   }
 
+  .home-banner {
+    display: block;
+  }
+
   /* About */
 
   .timeline {
@@ -801,14 +830,17 @@ footer {
     padding: 16px;
   }
 
-
-
-
   /* Portfolio */
 
   .portfolio-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Skills */
+
+  .skill-list li img {
+    height: 100px;
   }
 
   /* Contact */
