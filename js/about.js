@@ -19,7 +19,7 @@ const timelineItems = [
   },
   {
     title: "Técnico Eletrônico Jr. | Assistência Técnica | Multilaser",
-    content: "Meu primeiro emprego na área",
+    content: "Meu primeiro emprego na área, onde tive a oportunidade de trabalhar de perto com eletrônica",
     year: "2020.2",
     icon: "charging_station"
   },
@@ -31,7 +31,7 @@ const timelineItems = [
   },
   {
     title: "Análise e Desenvolvimento de Sistemas | IFSP",
-    content: "Depois de pensar muito sobre, percebi que era apaixonada por programação e troquei de curso",
+    content: "Depois de pensar muito sobre, percebi que era apaixonada por programação e troquei de curso. Melhor decisão que tomei",
     year: "2023.1",
     icon: "developer_mode"
   },
