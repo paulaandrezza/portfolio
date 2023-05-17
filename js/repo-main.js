@@ -4,7 +4,6 @@ const repoList = document.getElementById('repo-list');
 
 
 function convertRepoToLi(repositorio) {
-  console.log(repositorio.deploy)
   return `
       <li class="project-card">
 
