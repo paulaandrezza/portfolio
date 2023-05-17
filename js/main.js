@@ -10,6 +10,8 @@ const header = document.querySelector('header');
 menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('open');
   header.classList.toggle('show');
+  header.style.setProperty("background-color", "var(--background-secondary)")
+  header.style.setProperty("box-shadow", "0 -5px 10px var(--font-color)")
 })
 
 /* toggle the navbar when click any navbar link */
