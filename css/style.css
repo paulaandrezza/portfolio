@@ -539,6 +539,7 @@ header .btn2:hover {
   gap: 5px;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .project-topics li {
