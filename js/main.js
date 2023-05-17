@@ -51,7 +51,7 @@ function changeTheme(isLight) {
     document.body.style.setProperty('--background-primary', '#F9EFF3');
     document.body.style.setProperty('--background-secondary', '#FCF7F9');
     document.body.style.setProperty('--font-color', '#1F1F1F');
-    home.style.setProperty('background-image', 'url(../assets/img/background-light.jpg)');
+    home.style.setProperty('background-image', 'url(assets/img/background-light.jpg)');
 
     logo.src='assets/img/logo-dark.svg'
 
@@ -60,7 +60,7 @@ function changeTheme(isLight) {
     document.body.style.setProperty('--background-primary', '#1F1F1F');
     document.body.style.setProperty('--background-secondary', '#2D2F31');
     document.body.style.setProperty('--font-color', '#E3E3E3');
-    home.style.setProperty('background-image', 'url(../assets/img/background.png)');
+    home.style.setProperty('background-image', 'url(assets/img/background.png)');
 
     logo.src='assets/img/logo-light.svg'
 
