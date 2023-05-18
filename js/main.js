@@ -35,7 +35,7 @@ const switcher = document.getElementById('switcher');
 const home = document.getElementById('home');
 
 const toggle = document.getElementById('toggle');
-var isLight = localStorage.getItem('data-theme') == 'light';
+let isLight = localStorage.getItem('data-theme') == 'light';
 isLight ? toggle.classList.toggle('light') : null;
 changeTheme(isLight);
 
