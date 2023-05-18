@@ -520,6 +520,10 @@ header .btn2:hover {
  font-size: 0.8em;
 }
 
+.project-title, .project-subtitle {
+  padding-bottom: 1em;
+}
+
 .card-content .info .material-symbols-rounded, .card-content .info ion-icon {
   font-size: 2rem;
   padding: 10px;
