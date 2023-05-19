@@ -43,10 +43,10 @@ const skillsItems = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
         language: "Tailwind CSS"
       },
-      {
-        icon: "assets/img/nextjs.svg",
-        language: "Next.js"
-      },
+      // {
+      //   icon: "assets/img/nextjs.svg",
+      //   language: "Next.js"
+      // },
     ] 
   },
   {
