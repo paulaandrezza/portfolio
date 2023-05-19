@@ -1,6 +1,6 @@
 const skillsItems = [
   {
-    title: "Linaguagens de Programação e de Marcação",
+    title: "Linguagens de Programação e de Marcação",
     icons: [
       {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
